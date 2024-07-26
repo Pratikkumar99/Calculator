@@ -1,109 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detto</title>
-    <link rel="shortcut icon" href="favicon.ico" type="">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CALCULATOR</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="section" id="first-page">
-            <div class="navbar">
-                <div class="menu">
-                    <a href="#">Home</a>
-                    <a href="#second-page">Menu</a>
-                    <a href="#second-page">Cart</a>
-                    <a href="#third-page">Contact Us</a>
-                </div>
-            </div>
-            <div class="logo">
-            <h2>WELCOME TO OUR DHABA ('~')</h2>
-            </div>
+  <div id="container">
+    <div id="calculator">
+      <div id="screen">
+        <div id="input">
+          <h4 class="input">0</h4>
         </div>
-
-
-        <div class="section" id="second-page">
-
-          <div class="cart">
-            <div class="cover-topbar"></div>
-            <div class="cart-navbar">
-              <h2>CART</h2>
-              <i class="fa-solid fa-cart-shopping"></i>
-            </div>
-            <div class="cart-content">
-              <input type="text" class="search-product">
-              <button id="search">search</button>
-              <div class="product delete">
-                <div class="product-image"></div>
-                <div class="product-quantity">
-                  <button class="increase">+</button>
-                  <p class="showQuantity">1</p>
-                  <button class="decrease">-</button>
-                </div>
-                <div class="ShoWprice">
-                  <p>Price= <span class="cost">200</span>$</p>
-                </div>
-              </div>
-            </div>
+        <div id="Output">
+          <button class="operator cancel">C</button>
+          <button class="operator EqualTo">=</button>
+        </div>
+      </div>
+      <div id="operations">
+        <div id="operators">
+          <div class="line">
+            <button class="operator add">+</button>
+            <button class="operator subs">-</button>
+            <button class="operator mul">×</button>
           </div>
-
-        </div>  
-
-        <div class="section" id="third-page">
-              <div class="contactUs">
-                <div class="contact">
-                  <h2>Reach Us</h2>
-                  
-                  <form action="#.php">
-                    <div class="firstname">
-                      <label for="fname">First Name</label>
-                      <input type="text" placeholder="Your first Name.." id="fname">
-                    </div>
-                    
-                    <div class="lastname">
-                       <label for="lname">Last Name</label>
-                      <input type="text" placeholder="Your last Name.." id="lname">
-                    </div>
-                    
-                    <div class="state">
-                      <label for="State">State</label>
-                      <select name="State" id="State">
-                        <option value="Haryana">Haryana</option>
-                        <option value="Bihar">Bihar</option>
-                        <option value="Rajasthan">Rajasthan</option>
-                        <option value="Kerala">Kerala</option>
-                        <option value="Gujarat">Gujarat</option>
-                        <option value="Maharashtra">Maharashtra</option>
-                        <option value="Odisha">Odisha</option>
-                        <option value="Tamilnadu">Tamilnadu</option>
-                        <option value="Bengaluru">Bengaluru</option>
-                        <option value="Uttarakhand">Uttarakhand</option>
-                        <option value="UP">UP</option>
-                      </select>
-                    </div>
-                    
-                    <div class="email">
-                      <label for="email">E-mail</label>
-                      <input type="email" id="email" placeholder="Your email..">
-                    </div>
-                    
-                    <div class="Query">
-                      <label for="queries">Ask Queries</label>
-                      <textarea id="queries" placeholder="write something here..."></textarea>
-                    </div>
-                    
-                    <div class="submit">
-                     <button type="submit">Submit</button>
-                    </div>
-                  </form>
-                  
-              </div>
-
+          <div class="line">
+            <button class="operator div">÷</button>
+            <button class="operator num0">0</button>
+            <button class="operator" id="changeColor">Del</button>
+          </div>
+          <div class="line">
+            <button class="operator num1">1</button>
+            <button class="operator num2">2</button>
+            <button class="operator num3">3</button>
+          </div>
+          <div class="line">
+            <button class="operator num4">4</button>
+            <button class="operator num5">5</button>
+            <button class="operator num6">6</button>
+          </div>
+          <div class="line">
+            <button class="operator num7">7</button>
+            <button class="operator num8">8</button>
+            <button class="operator num9">9</button>
+          </div>
         </div>
-        <script src="script.js"></script>
+      </div>
+
+    </div>
+
+  </div>
+  <script src="script.js"></script>
 </body>
+
 </html>
