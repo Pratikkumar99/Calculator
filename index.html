@@ -10,48 +10,48 @@
 
 <body>
   <div id="container">
-    <div id="calculator">
-      <div id="screen">
-        <div id="input">
-          <h4 class="input">0</h4>
+    <div class="calculator">
+      <form>
+        <div class="display">
+          <input type="text" name="display">
         </div>
-        <div id="Output">
-          <button class="operator cancel">C</button>
-          <button class="operator EqualTo">=</button>
+        <div>
+          <input type="button" value="AC" onclick="display.value = '' " id="opert">
+          <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1)" id="opert">
+          <input type="button" value="." onclick="display.value += '.' " id="opert">
+          <input type="button" value="/" onclick="display.value += '/' " id="opert">
         </div>
+        <div>
+          <input type="button" value="7" onclick="display.value += '7' ">
+          <input type="button" value="8" onclick="display.value += '8' ">
+          <input type="button" value="9" onclick="display.value += '9' ">
+          <input type="button" value="*" onclick="display.value += '*' " id="opert"">
+        </div>
+        <div>
+          <input type="button" value="4" onclick="display.value += '4' ">
+          <input type="button" value="5" onclick="display.value += '5' ">
+          <input type="button" value="6" onclick="display.value += '6' ">
+          <input type="button" value="-" onclick="display.value += '-' " id="opert"">
+        </div>
+        <div>
+          <input type="button" value="1" onclick="display.value += '1' ">
+          <input type="button" value="2" onclick="display.value += '2' ">
+          <input type="button" value="3" onclick="display.value += '3' ">
+          <input type="button" value="+" onclick="display.value += '+' " id="opert"">
+        </div>
+        <div>
+          <input type="button" value="00" onclick="display.value += '00' ">
+          <input type="button" value="0" onclick="display.value += '0' ">
+          <input type="button" value="=" style="width: 145px;" onclick="display.value=eval(display.value) " id="opert">
+        </div>
+      </form>
+      <div class="colorManage">
+        <div class="black clr"></div>
+        <div class="purple clr"></div>
+        <div class="yellow clr"></div>
+        <div class="white clr"></div>
       </div>
-      <div id="operations">
-        <div id="operators">
-          <div class="line">
-            <button class="operator add">+</button>
-            <button class="operator subs">-</button>
-            <button class="operator mul">×</button>
-          </div>
-          <div class="line">
-            <button class="operator div">÷</button>
-            <button class="operator num0">0</button>
-            <button class="operator" id="changeColor">Del</button>
-          </div>
-          <div class="line">
-            <button class="operator num1">1</button>
-            <button class="operator num2">2</button>
-            <button class="operator num3">3</button>
-          </div>
-          <div class="line">
-            <button class="operator num4">4</button>
-            <button class="operator num5">5</button>
-            <button class="operator num6">6</button>
-          </div>
-          <div class="line">
-            <button class="operator num7">7</button>
-            <button class="operator num8">8</button>
-            <button class="operator num9">9</button>
-          </div>
-        </div>
-      </div>
-
     </div>
-
   </div>
   <script src="script.js"></script>
 </body>
