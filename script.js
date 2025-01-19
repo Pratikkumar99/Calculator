@@ -4,6 +4,7 @@ let blak = document.querySelector(".black");
 let pupl = document.querySelector(".purple");
 let yelo = document.querySelector(".yellow");
 let whit = document.querySelector(".white");
+let container = document.querySelector("#container");
 
 blak.addEventListener("click",()=>{
     calc.style.backgroundColor = "Black";
